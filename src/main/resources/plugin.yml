@@ -1,0 +1,13 @@
+name: TheOtherside
+version: '${project.version}'
+main: com.fadedbytes.theotherside.TheOtherside
+api-version: 1.18
+authors: [ PaueteKKUET ]
+description: Discover the history of an ancient civilization that today no longer lives in your world.
+commands:
+  link:
+    usage: /link (link | unlink) <player> [slavePlayer] [world]
+    aliases: [ link ]
+  getotherside:
+    usage: /getotherside <item>
+    aliases: [ getotherside ]
