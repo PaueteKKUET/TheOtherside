@@ -108,16 +108,7 @@ public class PlayerLink {
         if (master.isOnline() && slave.isOnline()) {
             Location masterLocation = master.getLocation().clone();
             masterLocation.setWorld(this.world);
-
-            this.slave.setFlying(true);
             this.slave.teleport(masterLocation);
-
-            if (!slave.getLocation().getBlock().isPassable()) {
-                this.slave.playNote(this.slave.getLocation(), Instrument.PIANO, Note.natural(1, Note.Tone.A));
-            }
-            if (!master.getLocation().getBlock().isPassable()) {
-                this.master.playNote(this.master.getLocation(), Instrument.PIANO, Note.natural(0, Note.Tone.G));
-            }
         }
     }
 
